@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Annual Halloween Party Survey</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div id="description"> 
+    <h1 id="title"><strong>Annual Halloween Party Sign-up Form</strong></h1>
+    <p>Join us on the <strong>31st October 2023</strong> at <strong>Trafalgar Triangle</strong> for the <em>most anticipated</em> halloween party of the year! There's something for <strong>all the family</strong> so don't miss out. <strong>Complete the form below to book your tickets now!</strong></p></div>
+<form>
+
+   
+      <div class="questions"><label for="name">Name</label></div>
+      <div><input class="box" id="name" type="text" name="name" placeholder="Enter your name" required></div> <br>
+    
+      <div class="questions"><label for="email">Email</label></div>
+      <div><input class="box" id="email" type="email" name="email" placeholder="Enter your email" required></div><br>
+      
+      <div class="questions"><label for="mobile-number">Mobile number</label></div>
+      <input class="box" id="mobile-number" type="text" name="mobile-number" placeholder="Enter your mobile number"required>
+    
+      <div class="questions"><p>How many guests will you be bringing?
+      </p></div>
+      <div><input class="box" id="number" type="number" name="guests-number" placeholder="No. of guests" min="0" max="5" required></div>
+    
+      <div class="questions"><p>What time do you prefer?</p></div>
+      <div><select class="box" id="dropdown" name="time" required>
+        <option disabled selected value>Select time</option>
+          <option value="time1">6:00pm-9:00pm</option>
+          <option value="time2">9:00pm-12:00am</option>
+       </select></div>
+       
+    <div class="questions">
+    <p>What activities would you like to participate in?</p></div> 
+
+    <div>
+    <label><input class="input-checkbox" type="checkbox" name="activities" value="apple-bobbing">Apple bobbing </label></div><br>
+
+    <div>
+    <label><input class="input-checkbox" type="checkbox" name="activities" value="apple-bobbing">Cookie decorating</label></div><br>
+
+    <div>
+    <label><input class="input-checkbox" type="checkbox" name="activities" value="apple-bobbing">Making pumpkin soup</label></div><br>
+
+    <div>
+    <label><input class="input-checkbox" type="checkbox" name="activities" value="apple-bobbing">Pumpkin carving - make your very own Jack-O'-Lantern</label></div><br>
+
+    <div>
+    <label><input class="input-checkbox" type="checkbox" name="activities" value="apple-bobbing">IRL Murder Mystery</label></div><br>
+
+    <div>
+    <label><input class="input-checkbox" type="checkbox" name="activities" value="apple-bobbing">Shoot the Skeleton - halloween-themed archery for any skill level</label></div><br>
+    
+    <div>
+    <label><input class="input-checkbox" type="checkbox" name="activities" value="apple-bobbing">Halloween Movie Trivia - test your movie knowledge to win prizes</label></div><br>
+    
+  
+  
+
+  <div class="questions"><p>
+    Do you have any comments or suggestions?
+  </p></div>
+  <div><textarea class="box" id="comments" name="comments" placeholder="Enter your comments here..."></textarea></div>
+   <label>
+        <div class="questions"><p>How would you like to receive your ticket?</p></div>
+        
+        
+        <input class="input-radio" value="choose-email" name="receive-ticket" type="radio" checked>Email</label>
+       <label>
+         <input class="input-radio" value="choose-text" name="receive-ticket" type="radio">Text/SMS</label>
+         <label><br>
+
+  <button type="submit" id="submit" onclick="alert('Thanks! See you at the party!')">Submit form</button>
+      
+</form>
+
+
+</body>
+</html>
